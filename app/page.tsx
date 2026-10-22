@@ -184,7 +184,11 @@ export default function Home() {
         </p>
       </section>
 
-      <section className="gallery-section section" id="gallery">
+      <section
+        className="gallery-section section"
+        style={{ display: "none" }}
+        id="gallery"
+      >
         <div className="section-heading">
           <p className="eyebrow">
             <span /> LITTLE MOMENTS, BIG MEMORIES
