@@ -1,4 +1,3 @@
-
 "use client";
 
 import { useState } from "react";
@@ -128,9 +127,7 @@ export default function Home() {
             </Link>
           </div>
 
-          <p className="microcopy">
-            A little moment, a memory to take home.
-          </p>
+          <p className="microcopy">A little moment, a memory to take home.</p>
         </div>
 
         <div
@@ -188,10 +185,10 @@ export default function Home() {
           aria-label="Open pricelist image full screen"
         >
           <Image
-            src="/images/rona-pricelist.png"
+            src="/images/rona-pricelist.jpg"
             alt="RONA Photobooth packages and add-on pricelist"
             width={1024}
-            height={1536}
+            height={1590}
           />
 
           <span className="zoom-hint">
@@ -229,20 +226,18 @@ export default function Home() {
           role="group"
           aria-label="Filter gallery"
         >
-          {["All", "Photostrips", "The Booth", "Real Moments"].map(
-            (filter) => (
-              <button
-                key={filter}
-                className={`gallery-filter ${
-                  galleryFilter === filter ? "active" : ""
-                }`}
-                onClick={() => setGalleryFilter(filter)}
-                aria-pressed={galleryFilter === filter}
-              >
-                {filter}
-              </button>
-            )
-          )}
+          {["All", "Photostrips", "The Booth", "Real Moments"].map((filter) => (
+            <button
+              key={filter}
+              className={`gallery-filter ${
+                galleryFilter === filter ? "active" : ""
+              }`}
+              onClick={() => setGalleryFilter(filter)}
+              aria-pressed={galleryFilter === filter}
+            >
+              {filter}
+            </button>
+          ))}
         </div>
 
         <div className="gallery-grid">
@@ -267,9 +262,7 @@ export default function Home() {
                   </b>
                 </div>
 
-                {index % 2 === 0 && (
-                  <span className="gallery-sparkle">✳</span>
-                )}
+                {index % 2 === 0 && <span className="gallery-sparkle">✳</span>}
               </div>
 
               <div className="gallery-card-caption">
@@ -357,10 +350,10 @@ export default function Home() {
           </button>
 
           <Image
-            src="/images/rona-pricelist.png"
+            src="/images/rona-pricelist.jpg"
             alt="RONA Photobooth pricelist enlarged"
             width={1024}
-            height={1536}
+            height={1590}
             onClick={(event) => event.stopPropagation()}
           />
         </div>
